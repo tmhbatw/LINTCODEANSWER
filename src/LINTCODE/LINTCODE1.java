@@ -13,6 +13,8 @@ public class LINTCODE1 {
       a&b<<1得出结果为a与b两整数进位结果
       二者相加知道没有进位即为运算结果
     * */
+
+
     public static  int aplusb(int a, int b) {
         while((a&b)<<1!=0){
             int temp=a^b;
