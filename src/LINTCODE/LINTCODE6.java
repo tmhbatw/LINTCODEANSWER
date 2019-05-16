@@ -10,6 +10,7 @@ public class LINTCODE6 {
     *Solution
     *用a,b两个值表示数组A、B的下标，比较A[a]、B[b]的大小并插入结果数组中
     * 下为超越99.8%解法
+    *
     * */
     public int[] mergeSortedArray(int[] A, int[] B) {
         int[] result=new int[A.length+B.length];
