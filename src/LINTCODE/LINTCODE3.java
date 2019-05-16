@@ -6,7 +6,7 @@ public class LINTCODE3 {
     * */
 
     /*Solution
-    暴力遍历每一个数字可以获得答案
+     暴力遍历每一个数字可以获得答案
     * */
     public int digitCounts(int k, int n) {
         int result=0;
