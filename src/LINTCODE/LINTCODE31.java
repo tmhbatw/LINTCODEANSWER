@@ -11,6 +11,7 @@ public class LINTCODE31 {
     /*Solution
     * 快速排序方法的第一步即可
     * 创建一个左下标left与右下标right，当nums[left]>k且nums[right]<k时交换左右两边数字
+    * 超越100%方法
     * */
 
     public int partitionArray(int[] nums, int k) {
