@@ -12,8 +12,27 @@ public class LINTCODE43 {
 
     /*Solution
     * 经典的动态规划问题
-    *
+    *创建两个二维数组分别保存包含当前数字的以及最大的整数和
     * */
+
+
+    public int maxSubArray(int[] nums, int k) {
+        int[][] currMax=new int[k+1][nums.length+1];
+        int[][] totalMax=new int[k+1][nums.length+1];
+        for(int i=1;i<k+1;i++){
+            currMax[i][i-1]=Integer.MIN_VALUE;
+            for(int j=i;j<nums.length+1;j++){
+                currMax[i][j]=Math.max(totalMax[i-1][j-1],currMax[i][j-1])+nums[j-1];
+                if(i==j)
+                    totalMax[i][j]=currMax[i][j];
+                else {
+                    totalMax[i][j] = Math.max(currMax[i][j], totalMax[i][j - 1]);
+                }
+            }
+        }
+        return totalMax[k][nums.length];
+        // write your code here
+    }
 
 
 //递归实现，时间复杂度超标
@@ -47,8 +66,4 @@ public class LINTCODE43 {
 //        return max;
 //    }
 
-    public static void main(String[] args){
-        int[] a={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,-2,1,-15,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
-        System.out.println(maxSubArray(a,1));
-    }
 }
