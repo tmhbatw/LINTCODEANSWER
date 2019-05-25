@@ -1,6 +1,15 @@
 package LINTCODE;
 
 public class LINTCODE53 {
+
+    /*Description
+    * Given an input string, reverse the string word by word.
+    * */
+
+    /*Solution
+    * 转换位置，稍微注意多个空格情况处理即可
+    * */
+
     public static String reverseWords(String s) {
         s+=" ";
         String result="";
@@ -14,10 +23,4 @@ public class LINTCODE53 {
         return result.substring(0,result.length()>0?result.length()-1:0);
     }
 
-
-    public static void main(String[] args){
-        String s="word";
-        String[] ss=s.split(" ");
-        System.out.println(ss[0]);
-    }
 }
