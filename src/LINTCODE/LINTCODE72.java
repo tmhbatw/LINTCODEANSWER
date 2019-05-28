@@ -14,10 +14,8 @@ public class LINTCODE72 {
     * */
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        if(inorder.length==0||inorder.length!=postorder.length)
+        if(inorder.length==0)
             return null;
-        if(inorder.length==1)
-            return new TreeNode(inorder[0]);
         return get(inorder,0,inorder.length-1,postorder,0,postorder.length-1);
         // write your code here
     }
@@ -25,8 +23,6 @@ public class LINTCODE72 {
     private TreeNode get(int[] inorder,int instart,int inend,int[] postorder,int poststart,int postend){
         if(instart>inend)
             return null;
-        if(instart==inend)
-            return new TreeNode(inorder[instart]);
         TreeNode root=new TreeNode(postorder[postend]);
         int index=findIndex(inorder,instart,inend,postorder[postorder.length-1]);
         root.left=get(inorder,instart,index-1,postorder,poststart,poststart+(index-1-instart));
