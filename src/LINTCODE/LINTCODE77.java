@@ -16,15 +16,15 @@ public class LINTCODE77 {
     public int longestCommonSubsequence(String A, String B) {
         if(A.length()==0||B.length()==0)
             return 0;
-        int[][] result=new int[B.length()+1][A.length()+1];
-        for(int i=0;i<result.length;i++){
-            for(int j=0;j<result[0].length;j++){
+        int[][] result=new int[A.length()+1][B.length()+1];
+        for(int i=0;i<A.length();i++){
+            for(int j=0;j<B.length();j++){
                 if(A.charAt(i)==B.charAt(j))
                     result[i+1][j+1]=result[i][j]+1;
                 else
                     result[i+1][j+1]=Math.max(result[i][j+1],result[i+1][j]);
             }
         }
-        return result[B.length()][A.length()];
+        return result[A.length()][B.length()];
     }
 }
