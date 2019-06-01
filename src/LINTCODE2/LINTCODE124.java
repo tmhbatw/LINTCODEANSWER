@@ -12,6 +12,7 @@ public class LINTCODE124 {
 
     /*Solution
     * 用一个set保存数组，判断每一个数的前后数字是否在set中
+    * 记录最大之和并将该列数字去掉以减少重复计算操作
     * */
 
     public int longestConsecutive(int[] num) {
