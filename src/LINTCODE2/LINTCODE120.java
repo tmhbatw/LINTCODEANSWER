@@ -19,6 +19,7 @@ public class LINTCODE120 {
 
 
     public int ladderLength(String start, String end, Set<String> dict) {
+        dict.remove(start);
         dict.add(end);
         List<String> list=new ArrayList<>();
         for(String res:dict)
