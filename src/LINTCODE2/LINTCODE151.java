@@ -19,11 +19,11 @@ public class LINTCODE151 {
         int[][] result=new int[3][prices.length+1];
         for(int i=1;i<3;i++){
             for(int j=2;j<prices.length+1;j++){
-
-                dp[i][j]=Math.max(result[i-1][j-1], Math.max(dp[i][j-1] +prices[j-1]- prices[j-2],0));
+                dp[i][j]=Math.max(result[i-1][j-1], dp[i][j-1] +prices[j-1]- prices[j-2]);
                 result[i][j]=Math.max(result[i][j-1],dp[i][j]);
             }
         }
+
         return result[2][prices.length];
         // write your code here
     }
