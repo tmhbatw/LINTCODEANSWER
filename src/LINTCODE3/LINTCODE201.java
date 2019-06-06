@@ -13,6 +13,10 @@ public class LINTCODE201 {
     * 实现一个 build 方法，接受 start 和 end 作为参数, 然后构造一个代表区间 [start, end] 的线段树，返回这棵线段树的根。
     * */
 
+    /*Solution
+    * 递归遍历即可
+    * */
+
     public SegmentTreeNode build(int start, int end) {
         if(start>end)
             return null;
