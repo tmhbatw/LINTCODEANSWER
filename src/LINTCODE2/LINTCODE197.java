@@ -8,7 +8,8 @@ public class LINTCODE197 {
     * */
 
     /*Solution
-    *
+    *创建一个数组dp,其中dp[i]表示当A的前i位确定以后，后面位置随机排列有多少种情况
+    * 计算每一位后面比它小的数有几个，乘以dp[i]的值全部相加就可以获得最后的结果
     * */
 
     public long permutationIndex(int[] A) {
