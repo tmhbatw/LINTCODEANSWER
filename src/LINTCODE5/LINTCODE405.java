@@ -12,6 +12,7 @@ public class LINTCODE405 {
     /*Solution
     * 建立一个数组用来保存前i行j列的数字之和
     * o(n4)时间复杂度可以轻松解决
+    * 可以建立一个hashmap观察是否相等来减少一层循环
     * */
 
     public int[][] submatrixSum(int[][] matrix) {
