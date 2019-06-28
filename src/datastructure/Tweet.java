@@ -1,6 +1,6 @@
 package datastructure;
 
-class Tweet {
+public class Tweet {
     public int id;
     public int user_id;
     public String text;
