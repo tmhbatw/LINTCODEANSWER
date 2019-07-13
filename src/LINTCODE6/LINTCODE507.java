@@ -10,23 +10,23 @@ public class LINTCODE507 {
     /*Solution
     * 与508题相似
     * 排序后交叉摆放
+    * 首先获取一个排序好的数组，将排序好的数组依次加入目标数组中即可
     * */
 
     public void wiggleSort(int[] nums) {
         // write your code here
-        int[] temp = (int[])nums.clone();
-        Arrays.sort(temp);
-        int n = nums.length;
-        int left = (n-1)/2;
-        int right = n-1;
+        int[] num=nums.clone();
+        Arrays.sort(num);
+        int length=nums.length;
+        int half=length/2;
+        int i=0,j=nums.length%2==0?half:half+1;
+        while(i*2<nums.length-1){
+            nums[i*2]=num[half-1-i];
+            nums[i*2+1]=
+                    num[length-1-i++];
 
-        int index = 0;
-        while(left>=0 && right>=(n+1)/2) {
-            nums[index++] = temp[left--];
-            nums[index++] = temp[right--];
         }
-        if(left>=0) {
-            nums[index] = temp[left];
-        }
+        if(nums.length%2==1)
+            nums[2*i]=num[i];
     }
 }
