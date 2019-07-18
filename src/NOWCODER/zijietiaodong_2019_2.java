@@ -2,7 +2,7 @@ package NOWCODER;
 
 import java.util.Scanner;
 
-public class zijitiaodong_2019_2 {
+public class zijietiaodong_2019_2 {
     /*Description
     * 给定N（可选作为埋伏点的建筑物数）、D（相距最远的两名特工间的距离的最大值）以及可选建筑的坐标，计算在这次行动中，大锤的小队有多少种埋伏选择。
      * */
