@@ -25,19 +25,9 @@ public class yizhandaodi_5 {
             min=Math.min(speed[i],min);
             max=Math.max(speed[i],max);
         }
-        long maxx=max+m;
-        double minRes=3.6*k/(maxx);
-        if(minRes==(int)minRes){
-            System.out.print((int)minRes+" ");
-        }else{
-            System.out.print(((int)minRes+1)+" ");
+        if(n==0){
+            max=min=0;
         }
-        long minn=min+m;
-        double maxRes=3.6*k/(minn);
-        if(maxRes==(int)maxRes){
-            System.out.print((int)maxRes);
-        }else{
-            System.out.print((int)maxRes+1);
-        }
+        System.out.println((int) Math.ceil(3.6*(k)/(m+max))+" "+(int)(Math.ceil((3.6*k)/(m+min))));
     }
 }
