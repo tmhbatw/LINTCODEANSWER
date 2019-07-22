@@ -1,5 +1,6 @@
 package NOWCODER;
 
+import java.text.DecimalFormat;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 import java.util.Scanner;
@@ -36,11 +37,7 @@ public class yizhandaodi_3 {
             res[i]=result;
         }
         for(double cur:res){
-            if(cur-(int)cur==0.0)
-                System.out.println((int)cur);
-            else{
-                System.out.println(cur);
-            }
+            System.out.println(new DecimalFormat("#.0").format(cur));
         }
     }
 }
