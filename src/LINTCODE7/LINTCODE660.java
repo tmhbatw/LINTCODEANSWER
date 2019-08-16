@@ -10,15 +10,37 @@ public class LINTCODE660 {
     /* The read4 API is defined in the parent class Reader4.
       int read4(char[] buf); */
 
+
     int read4(char[] buf){
         return 0;
     }
 
     char[] buffer=new char[4];
-    int last=0;
+    int lastindex=0;
+    int lastNumber=0;
+    boolean exist=true;
     public int read(char[] buf, int n) {
-        return 0;
-
+        if(!exist)
+            return 0;
+        int index=0;
+        while(index<n){
+            if(lastindex==lastNumber){
+                read();
+            }
+            if(!exist){
+                return index;
+            }
+            buf[index++]=buffer[lastindex++];
+        }
+        return index;
         // Write your code here
+    }
+
+    private void read(){
+        lastNumber=read4(buffer);
+        lastindex=0;
+        if(lastNumber==0)
+            exist=false;
+        System.out.println(new String(buffer));
     }
 }
