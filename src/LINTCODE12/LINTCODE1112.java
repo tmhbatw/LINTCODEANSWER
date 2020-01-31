@@ -7,19 +7,19 @@ public class LINTCODE1112 {
     * 给定数组nums，表示发生错误后的数组，以数组的形式返回重复的数值和缺失的数值。
     * */
 
-        public int[] findErrorNums(int[] nums) {
-            boolean[] reached=new boolean[nums.length];
-            int[] result=new int[2];
-            for(int num:nums){
-                if(reached[num-1])
-                    result[0]=num;
-                reached[num-1]=true;
-            }
-            for(int i=0;i<reached.length;i++){
-                if(!reached[i])
-                    result[1]=i+1;
-            }
-            return result;
-            // Write your code here
+    public int[] findErrorNums(int[] nums) {
+        boolean[] reached=new boolean[nums.length];
+        int[] result=new int[2];
+        for(int num:nums){
+            if(reached[num-1])
+                result[0]=num;
+            reached[num-1]=true;
         }
+        for(int i=0;i<reached.length;i++){
+            if(!reached[i])
+                result[1]=i+1;
+        }
+        return result;
+        // Write your code here
+    }
 }
