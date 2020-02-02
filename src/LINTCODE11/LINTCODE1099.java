@@ -27,8 +27,6 @@ public class LINTCODE1099 {
                         nums[i-1]=nums[i];
                 }
             }
-            System.out.println(Arrays.toString(nums));
-            System.out.println(flag);
         }
         return true;
         // Write your code here
