@@ -13,7 +13,7 @@ public class LINTCODE202 {
     /*Solution
     * BFS算法遍历所有的节点即可，需要注意的是有可能不存在完全符合的节点，返回上一节点的max值即可
     * */
-    public int query(SegmentTreeNode root, int start, int end) {
+/*    public int query(SegmentTreeNode root, int start, int end) {
         Queue<SegmentTreeNode> queue=new LinkedList<>();
         queue.add(root);
         int result=-1;
@@ -34,5 +34,5 @@ public class LINTCODE202 {
         }
         return result;
         // write your code here
-    }
+    }*/
 }

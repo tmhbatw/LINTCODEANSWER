@@ -19,7 +19,7 @@ public class LINTCODE203 {
     *用一个list保存所有与被修该的节点有关的节点，在最小的子节点被修改后依次修改父节点即可
     * */
 
-    public void modify(SegmentTreeNode root, int index, int value) {
+/*    public void modify(SegmentTreeNode root, int index, int value) {
         if(root==null||root.start>value||root.end<value)
             return;
         List<SegmentTreeNode> list=new ArrayList<>();
@@ -52,5 +52,5 @@ public class LINTCODE203 {
             }
         }
         // write your code here
-    }
+    }*/
 }

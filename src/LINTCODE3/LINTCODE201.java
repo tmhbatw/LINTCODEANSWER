@@ -17,14 +17,14 @@ public class LINTCODE201 {
     * 递归遍历即可
     * */
 
-    public SegmentTreeNode build(int start, int end) {
+/*    public SegmentTreeNode build(int start, int end) {
         if(start>end)
             return null;
         return recursion(start,end);
         // write your code here
-    }
+    }*/
 
-    private SegmentTreeNode recursion(int start,int end){
+/*    private SegmentTreeNode recursion(int start,int end){
         if(start==end){
             return new SegmentTreeNode(start,end);
         }
@@ -32,5 +32,5 @@ public class LINTCODE201 {
         root.left=recursion(start,(start+end)/2);
         root.right=recursion((start+end)/2+1,end);
         return root;
-    }
+    }*/
 }
