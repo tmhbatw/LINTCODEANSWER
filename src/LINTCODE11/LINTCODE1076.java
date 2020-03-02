@@ -22,19 +22,8 @@ public class LINTCODE1076 {
                     dp[i][j]=Math.min(dp[i-1][j]+s1.charAt(i-1),dp[i][j-1]+s2.charAt(j-1));
             }
         }
-        print(dp);
         return dp[s1Length][s2Length];
         // Write your code here
     }
 
-    public static void main(String[] args){
-        for(int i=0;i<26;i++){
-            System.out.print((char)(i+'a')+" "+(i+'a')+"  ");
-        }
-    }
-
-    private void print(int[][] dp){
-        for(int[] cur:dp)
-            System.out.println(Arrays.toString(cur));
-    }
 }
