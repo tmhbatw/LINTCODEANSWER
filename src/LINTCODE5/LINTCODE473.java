@@ -15,19 +15,19 @@ public class LINTCODE473 {
          * 与471题单词树的思路基本相似，只不过判断单词的时候需要在搜查到"."字符时进行机递归处理
          * */
 
-        boolean isWord=false;
-        HashMap<Character,WordDictionary> map=new HashMap<>();
-        boolean exist=false;
+        boolean isWord = false;
+        HashMap<Character, WordDictionary> map = new HashMap<>();
+        boolean exist = false;
 
 
         public void addWord(String word) {
-            WordDictionary curr=this;
-            for(int i=0;i<word.length();i++){
-                if(!curr.map.containsKey(word.charAt(i)))
-                    curr.map.put(word.charAt(i),new WordDictionary());
-                curr=curr.map.get(word.charAt(i));
+            WordDictionary curr = this;
+            for (int i = 0; i < word.length(); i++) {
+                if (!curr.map.containsKey(word.charAt(i)))
+                    curr.map.put(word.charAt(i), new WordDictionary());
+                curr = curr.map.get(word.charAt(i));
             }
-            curr.isWord=true;
+            curr.isWord = true;
             // write your code here
         }
 
@@ -36,29 +36,30 @@ public class LINTCODE473 {
          * @return: if the word is in the data structure.
          */
         public boolean search(String word) {
-            exist =false;
-            recursion(this,word,0);
+            exist = false;
+            recursion(this, word, 0);
             return exist;
             // write your code here
         }
 
-        public void recursion(WordDictionary dic,String word, int start){
-            if(exist)
+        public void recursion(WordDictionary dic, String word, int start) {
+            if (exist)
                 return;
-            if(start==word.length()&&dic.isWord){
-                exist=true;
+            if (start == word.length() && dic.isWord) {
+                exist = true;
                 return;
             }
-            if(start==word.length())
+            if (start == word.length())
                 return;
-            if(word.charAt(start)!='.'){
-                if(!dic.map.containsKey(word.charAt(start)))
+            if (word.charAt(start) != '.') {
+                if (!dic.map.containsKey(word.charAt(start)))
                     return;
-                recursion(dic.map.get(word.charAt(start)),word,start+1);
-            }else{
-                for(HashMap.Entry entry:dic.map.entrySet()){
-                    recursion((WordDictionary) entry.getValue(),word,start+1);
+                recursion(dic.map.get(word.charAt(start)), word, start + 1);
+            } else {
+                for (HashMap.Entry entry : dic.map.entrySet()) {
+                    recursion((WordDictionary) entry.getValue(), word, start + 1);
                 }
             }
         }
+    }
 }
