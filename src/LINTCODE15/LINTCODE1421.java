@@ -1,8 +1,8 @@
-package LINTCODE16;
+package LINTCODE15;
 
 import java.util.Arrays;
 
-public class LINTCODE1570 {
+public class LINTCODE1421 {
     /*Description
     *两个人在一个矩阵中选数字，每个人都最优的去选择数字，被选过的列就不能再被选了，返回最后两个人的分数差
     * */
