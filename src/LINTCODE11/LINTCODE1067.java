@@ -13,6 +13,7 @@ public class LINTCODE1067 {
             int[][] result=new int[k][1];
             for(int i=0;i<)
         }
+        return null;
         // Write your code here.
     }
 }
