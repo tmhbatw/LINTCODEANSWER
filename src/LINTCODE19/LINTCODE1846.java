@@ -11,11 +11,18 @@ public class LINTCODE1846 {
 
     public boolean ReachingPointsII(int[] start, int[] target) {
         if(start[0]==target[0]&&start[1]==target[1])
-            return  true;
-        if(start[0]>target[0]||start[1]>target[1])
+            return true;
+        if(target[0]<start[0]||target[1]<start[1]||target[0]==target[1])
             return false;
-        return ReachingPointsII(new int[]{start[0]+start[1],start[1]},target)
-                ||ReachingPointsII(new int[]{start[0],start[0]+start[1]},target);
+        if(target[0]==start[0]){
+            return (target[1] - start[1]) % target[0] == 0;
+        }
+        if(target[1]==start[1]){
+            return (target[0]-start[0])%target[1]==0;
+        }
+        if(target[0]>target[1])
+            return ReachingPointsII(start,new int[]{target[0]%target[1],target[1]});
+        return ReachingPointsII(start,new int[]{target[0],target[1]%target[0]});
         // write your code here
     }
 }
