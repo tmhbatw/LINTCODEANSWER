@@ -1,8 +1,6 @@
 package LINTCODE17;
 
-import java.util.LinkedList;
 import java.util.PriorityQueue;
-import java.util.Queue;
 
 public class LINTCODE1691 {
     /*Description
