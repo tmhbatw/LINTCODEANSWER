@@ -29,6 +29,7 @@ public class LINTCODE1164 {
             }
         }
         return Math.max(up[length-1],down[length-1]);
+
         // Write your code here
     }
 }
