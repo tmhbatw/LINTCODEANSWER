@@ -18,7 +18,6 @@ public class LINTCODE1896 {
         int row=carrot.length,col=carrot[0].length;
         boolean[][] reached=new boolean[row][col];
         while(true){
-            System.out.print(carrot[i][j]+" ");
             reached[i][j]=true;
             int index=-1;
             int curMax=Integer.MIN_VALUE;
