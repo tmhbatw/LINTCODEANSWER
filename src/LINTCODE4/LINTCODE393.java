@@ -1,4 +1,4 @@
-package LINTCODE2;
+package LINTCODE4;
 
 public class LINTCODE393 {
     /*与151题解题思路完全相同
