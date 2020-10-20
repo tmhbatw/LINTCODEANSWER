@@ -1,7 +1,6 @@
 package LINTCODE1;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class LINTCODE10 {
 
@@ -14,38 +13,38 @@ public class LINTCODE10 {
     * （PS：递归回溯算法适用于大部分题型）
     * */
 
-    public List<String> permutationString(String str){
-        List<String> result=new ArrayList<>();
-        String res="";
-        recursion(result,str,res,str.length());
-        removeList(result);
-        return result;
+
+
+
+    //一年前的方法
+    public List<String> stringPermutation2(String str) {
+        Set<String> result=new HashSet<>();
+        int length=str.length();
+        boolean[] reached=new boolean[length];
+        StringBuilder res=new StringBuilder();
+        recursion(result,reached,str,res,length,length);
+        return new ArrayList<>(result);
+        // write your code here
     }
 
     //递归方法
-    private void recursion(List<String> result,String str,String res,int n){
-        if(res.length()==n){
-            result.add(res);
+    private void recursion(Set<String> result,boolean[] reached,String str,StringBuilder res,int n,int length){
+        if(n==0){
+            result.add(res.toString());
             return;
         }
-        for(int i=0;i<str.length();i++){
-            recursion(result,removeChar(str,i),res+str.charAt(i),n);
+        for(int i=0;i<length;i++){
+            if(reached[i])
+                continue;
+            StringBuilder cur=new StringBuilder(res);
+            cur.append(str.charAt(i));
+            boolean[] curReached= reached.clone();
+            curReached[i]=true;
+            recursion(result,curReached,str,cur,n-1,length);
         }
 
     }
     private String removeChar(String str,int i){
         return str.substring(0,i)+str.substring(i+1,str.length());
-    }
-
-    //去重方法
-    private void removeList(List<String> result){
-        for(int i=0;i<result.size();i++){
-            String curr=result.get(i);
-            for(int j=result.size()-1;j>i;j--){
-                if(curr.equals(result.get(j))){
-                    result.remove(j);
-                }
-            }
-        }
     }
 }
