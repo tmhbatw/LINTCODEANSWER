@@ -15,6 +15,7 @@ public class LINTCODE1304 {
             dp[cur]++;
         for(int i=max-1;i>=0;i--)
             dp[i]+=dp[i+1];
+        return max;
         
         // write your code here
     }
