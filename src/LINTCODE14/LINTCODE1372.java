@@ -12,7 +12,7 @@ public class LINTCODE1372 {
     * 最后返回的列表可以是任意顺序的。而且注意返回的两个数字中间（逗号之后）都有一个空格。
     * */
 
-    public String[] ambiguousCoordinates(String S) {
+    public List ambiguousCoordinates(String S) {
         List<String> res=new ArrayList<>();
         int length=S.length();
         for(int i=1;i<=length-1;i++){
@@ -31,14 +31,14 @@ public class LINTCODE1372 {
             }
 
         }
-        return (String[]) res.toArray();
+        return res;
         //
     }
 
     private List<String> getCurList(String cur){
         List<String> res=new ArrayList<>();
         if(cur.length()==1){
-            res.add("0");
+            res.add(cur);
             return res;
         }
         int curLength=cur.length();
@@ -61,5 +61,11 @@ public class LINTCODE1372 {
 
     private String transformFormat(String cur1,String cur2){
         return "("+cur1+", "+cur2+")";
+    }
+
+    public static void main(String[] args){
+        List res=new LINTCODE1372().ambiguousCoordinates("00011");
+        for(Object cur:res)
+            System.out.println(cur);
     }
 }
