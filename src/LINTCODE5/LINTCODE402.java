@@ -1,6 +1,5 @@
 package LINTCODE5;
 
-import sun.plugin2.gluegen.runtime.CPU;
 
 import java.util.ArrayList;
 import java.util.Collections;
