@@ -15,8 +15,18 @@ public class LINTCODE1304 {
             dp[cur]++;
         for(int i=max-1;i>=0;i--)
             dp[i]+=dp[i+1];
-        return max+1;
-        
+        int left=0,right=max;
+        while(left<=right){
+            int mid=(right-left)/2+left;
+            int cur=dp[mid];
+            if(cur<mid){
+                right=mid-1;
+            }else if(mid==max||dp[mid+1]<mid+1)
+                return mid;
+            else
+                left=mid+1;
+        }
+        return left;
         // write your code here
     }
 }
