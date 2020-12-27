@@ -1,5 +1,4 @@
 # LINTCODEANSWER
 尽量完成LINTCODE全部问题解答
 src LINTCODE包中包含了我对LINTCODE上算法题的解题思路以及java语言的解法
-有兴趣的小伙伴可以同我交流一起完成解答！
-（更新中）
+大概更新就止于此了吧
