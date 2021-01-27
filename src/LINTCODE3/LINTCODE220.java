@@ -1,4 +1,4 @@
-package LINTCODE2;
+package LINTCODE3;
 
 public class LINTCODE220 {
     /*Description
