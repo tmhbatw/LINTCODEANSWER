@@ -12,8 +12,20 @@ public class LINTCODE299 {
     * */
 
     public String getTextcontent(String s) {
-        Stack<Character> deque=new Stack<>();
-        for(int i=0;i<s.length();)
+        Stack<Character> stack=new Stack<>();
+        for(int i=0;i<s.length();i++){
+            char c=s.charAt(i);
+            if(c!='<')
+                stack.push(c);
+            else{
+                if(!stack.empty())
+                    stack.pop();
+            }
+        }
+        StringBuilder sb=new StringBuilder();
+        while(!stack.empty())
+            sb.append(stack.pop());
+        return sb.reverse().toString();
         // write your code here.
     }
 }
