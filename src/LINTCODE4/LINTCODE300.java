@@ -16,9 +16,9 @@ public class LINTCODE300 {
             meetingWithValue[i][2]=value[i];
         }
         Arrays.sort(meetingWithValue,(o1,o2)->{
-            if(o1[1]==o2[1])
-                return o1[0]-o2[0];
-            return o1[1]-o2[1];
+            if(o1[0]==o2[0])
+                return o1[1]-o2[1];
+            return o1[0]-o2[0];
         });
         for(int[] cur:meetingWithValue)
             System.out.println(Arrays.toString(cur));
@@ -27,14 +27,17 @@ public class LINTCODE300 {
             maxTime=Math.max(maxTime,cur[1]);
         }
         int[] dp=new int[maxTime+1];
-        for(int i=1;i<=maxTime;i++){
-            dp[i]=dp[i-1];
-            for(int j=0;j<meetingWithValue.length;j++){
-                if(i<meetingWithValue[j][1])
-                    break;
-                dp[i]=Math.max(dp[i],dp[meetingWithValue[j][0]]+meetingWithValue[j][2]);
+        int pre=0;
+        for(int[] cur:meetingWithValue){
+            while(pre<cur[0]){
+                pre++;
+                dp[pre]=Math.max(dp[pre-1],dp[pre]);
             }
+            dp[cur[1]]=Math.max(dp[cur[1]],dp[cur[0]]+cur[2]);
+            System.out.println(dp[cur[0]]+"  "+dp[cur[1]]);
         }
+        for(int i=pre;i<=maxTime;i++)
+            dp[i]=Math.max(dp[i],dp[i-1]);
         return dp[maxTime];
         // write your code here
     }
