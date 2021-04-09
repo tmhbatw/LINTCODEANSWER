@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ed52e3c-415e-4bb5-b004-91139e48edd2" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="9ed52e3c-415e-4bb5-b004-91139e48edd2" name="Default Changelist" comment="更新了第281题的答案">
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LINTCODE10/LINTCODE963.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LINTCODE11/LINTCODE1070.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LINTCODE13/LINTCODE1210.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/LINTCODE3/LINTCODE271.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LINTCODE ANSWER.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LINTCODE ANSWER.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LINTCODE12/LINTCODE1011.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,128 +41,143 @@
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/exercise.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <element signature="e#66#67#0" expanded="true" />
-                <element signature="e#116#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/LINTCODE/LINTCODE3.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/LINTCODE/LINTCODE1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/exercise.java" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+  <component name="ProjectId" id="1kxEn9IzwUfsOby4BbXyy2iCofD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LINTCODE ANSWER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDEA PROJECT" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LINTCODE ANSWER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDEA PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LINTCODE ANSWER" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IDEA PROJECT" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="LINTCODE" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IDEA PROJECT\src\LINTCODE" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager">
-    <configuration name="exercise" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="exercise" />
+  <component name="RunManager" selected="Application.LINTCODE271">
+    <configuration name="LINTCODE1084" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LINTCODE11.LINTCODE1084" />
       <module name="LINTCODE ANSWER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LINTCODE11.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LINTCODE1262" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LINTCODE13.LINTCODE1262" />
+      <module name="LINTCODE ANSWER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LINTCODE13.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LINTCODE271" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LINTCODE3.LINTCODE271" />
+      <module name="LINTCODE ANSWER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LINTCODE3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LINTCODE937" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LINTCODE10.LINTCODE937" />
+      <module name="LINTCODE ANSWER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LINTCODE10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LINTCODE990" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="LINTCODE10.LINTCODE990" />
+      <module name="LINTCODE ANSWER" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LINTCODE10.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.exercise" />
+        <item itemvalue="Application.LINTCODE271" />
+        <item itemvalue="Application.LINTCODE937" />
+        <item itemvalue="Application.LINTCODE1262" />
+        <item itemvalue="Application.LINTCODE990" />
+        <item itemvalue="Application.LINTCODE1084" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -146,71 +189,438 @@
       <option name="presentableId" value="Default" />
       <updated>1558002972079</updated>
       <workItem from="1558002974594" duration="753000" />
+      <workItem from="1606634014019" duration="2325000" />
+      <workItem from="1606700340977" duration="6078000" />
+      <workItem from="1606804499926" duration="1600000" />
+      <workItem from="1606806136000" duration="2579000" />
+      <workItem from="1607601943677" duration="2904000" />
+      <workItem from="1607766077662" duration="888000" />
+      <workItem from="1607767023881" duration="15697000" />
+      <workItem from="1607946010815" duration="23170000" />
+      <workItem from="1608102998117" duration="2314000" />
+      <workItem from="1608125329500" duration="482000" />
+      <workItem from="1608125841576" duration="23721000" />
+      <workItem from="1608254545984" duration="2172000" />
+      <workItem from="1608440365271" duration="542000" />
+      <workItem from="1608458206819" duration="10138000" />
+      <workItem from="1608642283859" duration="37000" />
+      <workItem from="1608642328291" duration="6000" />
+      <workItem from="1608642345221" duration="19706000" />
+      <workItem from="1608959705335" duration="615000" />
+      <workItem from="1609089584325" duration="42000" />
+      <workItem from="1609598676186" duration="250000" />
+      <workItem from="1609599032271" duration="33000" />
+      <workItem from="1609655850080" duration="4044000" />
+      <workItem from="1609765409449" duration="371000" />
+      <workItem from="1609766196402" duration="392000" />
+      <workItem from="1610129715983" duration="2105000" />
+      <workItem from="1610985910418" duration="2550000" />
+      <workItem from="1611158526663" duration="1693000" />
+      <workItem from="1611510541793" duration="1064000" />
+      <workItem from="1611720922539" duration="1885000" />
+      <workItem from="1612690856221" duration="2205000" />
+      <workItem from="1616313630475" duration="2260000" />
+      <workItem from="1617893876136" duration="5283000" />
+      <workItem from="1617958455154" duration="1473000" />
     </task>
+    <task id="LOCAL-00014" summary="更新了第980题的答案">
+      <created>1608009868739</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608009868739</updated>
+    </task>
+    <task id="LOCAL-00015" summary="更新了第444题的答案">
+      <created>1608015644034</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608015644034</updated>
+    </task>
+    <task id="LOCAL-00016" summary="更新了第978题的答案">
+      <created>1608017535177</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608017535177</updated>
+    </task>
+    <task id="LOCAL-00017" summary="更新了第1150题的答案">
+      <created>1608032972186</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608032972186</updated>
+    </task>
+    <task id="LOCAL-00018" summary="更新了第849题的答案">
+      <created>1608036861893</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608036861893</updated>
+    </task>
+    <task id="LOCAL-00019" summary="更新了第1915题的答案">
+      <created>1608047034731</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608047034731</updated>
+    </task>
+    <task id="LOCAL-00020" summary="更新了第1889题的答案">
+      <created>1608048386537</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608048386537</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更新了第1393题的答案">
+      <created>1608127714791</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1608127714791</updated>
+    </task>
+    <task id="LOCAL-00022" summary="更新了第1336题的答案">
+      <created>1608132465758</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608132465758</updated>
+    </task>
+    <task id="LOCAL-00023" summary="更新了第1337题的答案">
+      <created>1608133469645</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608133469645</updated>
+    </task>
+    <task id="LOCAL-00024" summary="更新了第1344题的答案">
+      <created>1608135707591</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608135707591</updated>
+    </task>
+    <task id="LOCAL-00025" summary="更新了第1305题的答案">
+      <created>1608206461482</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608206461482</updated>
+    </task>
+    <task id="LOCAL-00026" summary="更新了第968题的答案">
+      <created>1608209010525</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1608209010525</updated>
+    </task>
+    <task id="LOCAL-00027" summary="更新了第1116题的答案">
+      <created>1608209829682</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608209829682</updated>
+    </task>
+    <task id="LOCAL-00028" summary="更新了第1223题的答案">
+      <created>1608211856009</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1608211856009</updated>
+    </task>
+    <task id="LOCAL-00029" summary="更新了第1101题的答案">
+      <created>1608216613807</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1608216613807</updated>
+    </task>
+    <task id="LOCAL-00030" summary="更新了第979题的答案">
+      <created>1608633589104</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1608633589104</updated>
+    </task>
+    <task id="LOCAL-00031" summary="更新了第979题的答案">
+      <created>1608633769601</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1608633769601</updated>
+    </task>
+    <task id="LOCAL-00032" summary="更新了第979题的答案">
+      <created>1608634266755</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1608634266755</updated>
+    </task>
+    <task id="LOCAL-00033" summary="更新了第1850题的答案">
+      <created>1608636516982</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1608636516982</updated>
+    </task>
+    <task id="LOCAL-00034" summary="更新了第1850题的答案">
+      <created>1608636557480</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1608636557480</updated>
+    </task>
+    <task id="LOCAL-00035" summary="更新了第1874题的答案">
+      <created>1608639413423</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1608639413423</updated>
+    </task>
+    <task id="LOCAL-00036" summary="更新了第1833题的答案">
+      <created>1608643628521</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1608643628521</updated>
+    </task>
+    <task id="LOCAL-00037" summary="更新了第817题的答案">
+      <created>1608644456547</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1608644456547</updated>
+    </task>
+    <task id="LOCAL-00038" summary="更新了第1862题的答案">
+      <created>1608654386981</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1608654386981</updated>
+    </task>
+    <task id="LOCAL-00039" summary="更新了第1882题的答案">
+      <created>1608657763611</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1608657763611</updated>
+    </task>
+    <task id="LOCAL-00040" summary="更新了第1258题的答案">
+      <created>1608695818825</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1608695818825</updated>
+    </task>
+    <task id="LOCAL-00041" summary="更新了第275题的答案">
+      <created>1608696787363</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1608696787363</updated>
+    </task>
+    <task id="LOCAL-00042" summary="更新了第1304题的答案">
+      <created>1608702327699</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1608702327699</updated>
+    </task>
+    <task id="LOCAL-00043" summary="更新了第1303题的答案">
+      <created>1608702546968</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1608702546968</updated>
+    </task>
+    <task id="LOCAL-00044" summary="更新了第862题的答案">
+      <created>1608703768834</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1608703768834</updated>
+    </task>
+    <task id="LOCAL-00045" summary="更新了第339题的答案">
+      <created>1608704201233</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1608704201233</updated>
+    </task>
+    <task id="LOCAL-00046" summary="更新了第889题的答案">
+      <created>1608705058512</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1608705058512</updated>
+    </task>
+    <task id="LOCAL-00047" summary="更新了第1084题的答案">
+      <created>1608711706013</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1608711706013</updated>
+    </task>
+    <task id="LOCAL-00048" summary="更新了第990题的答案">
+      <created>1608713038724</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1608713038724</updated>
+    </task>
+    <task id="LOCAL-00049" summary="更新了第1262题的答案">
+      <created>1609681452794</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1609681452794</updated>
+    </task>
+    <task id="LOCAL-00050" summary="更新了第1824题的答案">
+      <created>1610130539083</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1610130539083</updated>
+    </task>
+    <task id="LOCAL-00051" summary="更新了第1233题的答案">
+      <created>1610131409318</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1610131409318</updated>
+    </task>
+    <task id="LOCAL-00052" summary="更新了第1910题的答案">
+      <created>1610986188588</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1610986188589</updated>
+    </task>
+    <task id="LOCAL-00053" summary="更新了第724题的答案">
+      <created>1611029178230</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1611029178230</updated>
+    </task>
+    <task id="LOCAL-00054" summary="更新了第1916题的答案">
+      <created>1611163232595</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1611163232595</updated>
+    </task>
+    <task id="LOCAL-00055" summary="更新了第25题的答案">
+      <created>1611511407271</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1611511407271</updated>
+    </task>
+    <task id="LOCAL-00056" summary="更新了第220题的答案">
+      <created>1611511590900</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1611511590901</updated>
+    </task>
+    <task id="LOCAL-00057" summary="更新了第299题的答案">
+      <created>1611722197370</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1611722197371</updated>
+    </task>
+    <task id="LOCAL-00058" summary="更新了第288题的答案">
+      <created>1612692722687</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1612692722687</updated>
+    </task>
+    <task id="LOCAL-00059" summary="更新了第289题的答案">
+      <created>1612693352860</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1612693352860</updated>
+    </task>
+    <task id="LOCAL-00060" summary="更新了第345题的答案">
+      <created>1612694043287</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1612694043287</updated>
+    </task>
+    <task id="LOCAL-00061" summary="更新了第351题的答案">
+      <created>1617893976452</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1617893976452</updated>
+    </task>
+    <task id="LOCAL-00062" summary="更新了第281题的答案">
+      <created>1617900423235</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1617900423235</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="753000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/exercise.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#66#67#0" expanded="true" />
-            <element signature="e#116#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LINTCODE/LINTCODE3.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LINTCODE/LINTCODE1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="更新了第1862题的答案" />
+    <MESSAGE value="更新了第1882题的答案" />
+    <MESSAGE value="更新了第1258题的答案" />
+    <MESSAGE value="更新了第275题的答案" />
+    <MESSAGE value="更新了第1304题的答案" />
+    <MESSAGE value="更新了第1303题的答案" />
+    <MESSAGE value="更新了第862题的答案" />
+    <MESSAGE value="更新了第339题的答案" />
+    <MESSAGE value="更新了第889题的答案" />
+    <MESSAGE value="更新了第1084题的答案" />
+    <MESSAGE value="更新了第990题的答案" />
+    <MESSAGE value="更新了第1262题的答案" />
+    <MESSAGE value="更新了第1824题的答案" />
+    <MESSAGE value="更新了第1233题的答案" />
+    <MESSAGE value="更新了第1910题的答案" />
+    <MESSAGE value="更新了第724题的答案" />
+    <MESSAGE value="更新了第1916题的答案" />
+    <MESSAGE value="更新了第25题的答案" />
+    <MESSAGE value="更新了第220题的答案" />
+    <MESSAGE value="更新了第299题的答案" />
+    <MESSAGE value="更新了第288题的答案" />
+    <MESSAGE value="更新了第289题的答案" />
+    <MESSAGE value="更新了第345题的答案" />
+    <MESSAGE value="更新了第351题的答案" />
+    <MESSAGE value="更新了第281题的答案" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新了第281题的答案" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/LINTCODE9/LINTCODE849.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
