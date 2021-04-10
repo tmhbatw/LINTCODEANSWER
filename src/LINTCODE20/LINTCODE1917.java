@@ -19,7 +19,10 @@ public class LINTCODE1917 {
 
     public int maxProfit(int costPerCut, int salePrice, int[] lengths) {
         int result=0;
-        for(int i=0;i<=10000;i++){
+        int max=0;
+        for(int cur:lengths)
+            max=Math.max(cur,max);
+        for(int i=0;i<=max;i++){
             result=Math.max(result,getVal(lengths,i,salePrice,costPerCut));
         }
         return result;
