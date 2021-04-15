@@ -1,19 +1,28 @@
-import java.util.HashSet;
-import java.util.Set;
-import java.util.UUID;
+import datastructure.TreeNode;
+
+import java.util.Stack;
 
 public class Exercise {
 
-    //获取log2 a/b 的值
-    public double getResult(int a,int b){
-        return Math.log(a*1.0/b)/Math.log(2);
+    public void preOrder(TreeNode root){
+        if(root==null)
+            return;
+        System.out.print(root.val+" ");
+        preOrder(root.left);
+        preOrder(root.right);
     }
 
-    public static void main(String[] args){
-        Set set=new HashSet<>();
-        String uuid=UUID.randomUUID().toString().toUpperCase();
-        System.out.println(uuid);
+    //非递归实现
+    public void preOrder2(TreeNode root){
+        Stack<TreeNode> stack=new Stack<>();
+        stack.add(root);
+        while(!stack.isEmpty()){
+            TreeNode cur=stack.pop();
+            System.out.print(cur.val+" ");
+            if(cur.right!=null)
+                stack.add(cur.right);
+            if(root.left!=null)
+                stack.add(cur.left);
+        }
     }
-
-
 }
