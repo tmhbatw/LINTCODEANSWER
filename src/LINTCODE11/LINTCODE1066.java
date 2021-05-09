@@ -1,4 +1,4 @@
-package LINTCODE12;
+package LINTCODE11;
 
 import datastructure.TreeNode;
 

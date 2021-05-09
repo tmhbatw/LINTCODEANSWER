@@ -1,4 +1,4 @@
-package LINTCODE20;
+package LINTCODE19;
 
 import java.util.*;
 
