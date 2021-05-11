@@ -9,25 +9,21 @@ public class LINTCODE1553 {
     * */
 
     public long Solve(int n, int[] num) {
-
         int mod=1000000007;
-        
-        long[] dp=new long[n+1];
-
+        int[] dp=new int[n+2];
         dp[0]=1;
-
+        dp[1]=-1;
+        int res=0;
         for(int i=0;i<n;i++){
-
-            for(int j=1;j<=num[i]&&i+j<=n;j++){
-
-                dp[i+j]=(dp[i+j]+dp[i])%mod;
-
-            }
-
+            res=(res+dp[i])%mod;
+            int L=i+1;
+            int R=Math.min(n+1,i+1+num[i]);
+            dp[L]=(dp[L]+res)%mod;
+            dp[R]=(dp[R]-res)%mod;
         }
-
-        return dp[n];
-
+        return (dp[n]+res)%mod;
         // Write your code here
     }
+
+
 }
