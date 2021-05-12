@@ -24,4 +24,20 @@ public class LINTCODE934 {
             return prefixSum[j+1]-prefixSum[i];
         }
     }
+
+    public int unlock(int n, int m) {
+        boolean[] unlock=new boolean[m+1];
+        for(int i=1;i<=n;i++){
+            for(int j=i;j<=m;j+=i){
+                unlock[j]=!unlock[j];
+            }
+        }
+        int count=0;
+        for(int i=1;i<=1;i++){
+            if(unlock[i])
+                count++;
+        }
+        return count;
+        // Write your code here
+    }
 }
