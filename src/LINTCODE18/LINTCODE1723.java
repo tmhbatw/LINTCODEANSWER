@@ -1,5 +1,6 @@
 package LINTCODE18;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -11,43 +12,50 @@ public class LINTCODE1723 {
     * 并返回通过该路径所需的步数。如果找不到这样的路径，则返回 -1。
     * */
 
+
+    int[][] reached;
+    int[][] next=new int[][]{{-1,0},{1,0},{0,1},{0,-1}};
+    int result=Integer.MAX_VALUE;
     public int shortestPath(int[][] grid, int k) {
-        Queue<int[]> startQ=new LinkedList<>();
-        Queue<int[]> endQ=new LinkedList<>();
+        int m=grid.length;
+        int n=grid[0].length;
+        this.reached=new int[m][n];
+        for(int[] cur:reached)
+            Arrays.fill(cur,-1);
+        reached[0][0]=k;
         Queue<int[]> q=new LinkedList<>();
-        q.add(new int[]{0,0});
-        int result=Integer.MAX_VALUE;
-        for(int[] start:startQ){
-            for(int[] end:endQ){
-                int dis=Math.abs(start[0]-end[0])+Math.abs(start[1]-end[1]);
-                if(dis<=k)
-                    result=Math.min(result,dis+start[2]+end[2]-2);
+        q.add(new int[]{0,0,k});
+        int step=0;
+        while(!q.isEmpty()){
+            int size=q.size();
+            for(int i=0;i<size;i++){
+                int[] cur=q.poll();
+                if(cur[0]==m-1&&cur[1]==n-1)
+                    return step;
+                for(int[] nextPos:next){
+                    int ii=cur[0]+nextPos[0];
+                    int jj=cur[1]+nextPos[1];
+                    if(ii>=0&&ii<m&&jj>=0&&jj<n){
+                        if(grid[ii][jj]==1){
+                            if(cur[2]>0&&cur[2]-1>reached[ii][jj]) {
+                                q.add(new int[]{ii, jj, cur[2] - 1});
+                                reached[ii][jj]=cur[2]-1;
+                            }
+                        }else{
+                            if(cur[2]>reached[ii][jj]){
+                                q.add(new int[]{ii,jj,cur[2]});
+                                reached[ii][jj]=cur[2];
+                            }
+                        }
+                    }
+                }
             }
+            step++;
         }
-        return result;
+        return -1;
         // write your code here
     }
 
-    public static void main(String[] args) {
-        Scanner s=new Scanner(System.in);
-        int year=Integer.parseInt(s.nextLine());
-        boolean isLeap=true;
-        if(year%400==0){
 
-        }else if(year%100==0){
-            isLeap=false;
-        }else if(year%4==0)
-            isLeap=true;
-        if(isLeap)
-            System.out.println("is a leap year");
-        else
-            System.out.println("not a leap year");
 
-        // write your code here
-        // read data from console
-
-        // output the answer to the console according to the
-        // requirements of the question
-
-    }
 }
