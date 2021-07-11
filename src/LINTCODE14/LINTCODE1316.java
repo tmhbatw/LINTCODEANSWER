@@ -28,7 +28,7 @@ public class LINTCODE1316 {
             else
                 map.put(cur,map.get(cur)-1);
         }
-        return 0;
+        return res;
         // Write your code here.
     }
 
