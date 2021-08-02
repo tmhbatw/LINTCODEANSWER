@@ -20,19 +20,21 @@ public class LINTCODE91 {
     public int MinAdjustmentCost(List<Integer> A, int target) {
         int[][] dp=new int[A.size()][101];
         for(int i=0;i<A.size();i++){
-            for(int j=0;j<100;j++){
-                int last=Integer.MAX_VALUE;
-                int left=Math.max(1,j+1-target);
-                int right=Math.min(100,j+1+target);
-                for(int k=left;k<=right;k++){
-                    last=Math.min(dp[i][k],last);
+            for(int j=0;j<=100;j++){
+                if(i==0){
+                    dp[i][j]=Math.abs(A.get(0)-j);
+                    continue;
                 }
-                dp[i+1][j+1]=Math.abs(j+1-A.get(i))+last;
+                int pre=Integer.MAX_VALUE;
+                for(int k=Math.max(0,j-target);k<=Math.min(100,j+target);k++){
+                    pre=Math.min(pre,dp[i-1][k]);
+                }
+                dp[i][j]=Math.abs(A.get(i)-j)+pre;
             }
         }
         int result=Integer.MAX_VALUE;
-        for(int i=0;i<100;i++){
-            result=Math.min(result,dp[A.size()][i+1]);
+        for(int i=0;i<101;i++){
+            result=Math.min(result,dp[A.size()-1][i]);
         }
         return result;
         // write your code here
