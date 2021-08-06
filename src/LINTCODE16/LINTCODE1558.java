@@ -24,15 +24,7 @@ public class LINTCODE1558 {
             }
             result=Math.max(result,Math.max(dp1[i+1],dp2[i+1]));
         }
-        System.out.println(Arrays.toString(dp1));
-        System.out.println(Arrays.toString(dp2));
-        return Math.max(dp1[length],dp2[length]);
+        return result;
         // Write your code here
     }
-
-    public static void main(String[] args){
-        int[] num=new int[]{1,-1,3,-2,4,-4,5,-1,0,1,-1,3,0,2,-1,0,1,-1};
-        System.out.println(new LINTCODE1558().getLongest(num));
-    }
-
 }
