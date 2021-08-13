@@ -19,44 +19,38 @@ public class LINTCODE725 {
     * */
 
     //下为一个jdk12代码，显然对switch语句的使用有一定的优化
-    public int countParenth(char[] symb, char[] oper) {
-        int length=symb.length;
-        int[][][] dp=new int[length][length][2];
-        for(int i=0;i<length;i++){
-            if(symb[i]=='T')
-                dp[i][i][0]=1;
-            else
-                dp[i][i][1]=1;
-        }
-        for(int l=1;l<length;l++){
-            for(int i=0;i<length-l;i++){
-                int j=i+l;
-                for(int k=i;k<j;k++){
-                    switch (oper[k]) {
-                        case '&' -> {
-                            dp[i][j][0] += dp[i][k][0] * dp[k + 1][j][0];
-                            dp[i][j][1] += dp[i][k][1] * (dp[k + 1][j][0] + dp[k + 1][j][1]) + dp[i][k][0] * dp[k + 1][j][1];
-                        }
-                        case '|' -> {
-                            dp[i][j][1] += dp[i][k][1] * dp[k + 1][j][1];
-                            dp[i][j][0] += dp[i][k][0] * (dp[k + 1][j][0] + dp[k + 1][j][1]) + dp[i][k][1] * dp[k + 1][j][0];
-                        }
-                        default -> {
-                            dp[i][j][0] += dp[i][k][0] * dp[k + 1][j][1] + dp[i][k][1] * dp[k + 1][j][0];
-                            dp[i][j][1] += dp[i][k][0] * dp[k + 1][j][0] + dp[i][k][1] * dp[k + 1][j][1];
-                        }
-                    }
-                }
-            }
-        }
-        return dp[0][length-1][0];
-        // write your code here
-    }
+//    public int countParenth(char[] symb, char[] oper) {
+//        int length=symb.length;
+//        int[][][] dp=new int[length][length][2];
+//        for(int i=0;i<length;i++){
+//            if(symb[i]=='T')
+//                dp[i][i][0]=1;
+//            else
+//                dp[i][i][1]=1;
+//        }
+//        for(int l=1;l<length;l++){
+//            for(int i=0;i<length-l;i++){
+//                int j=i+l;
+//                for(int k=i;k<j;k++){
+//                    switch (oper[k]) {
+//                        case '&' -> {
+//                            dp[i][j][0] += dp[i][k][0] * dp[k + 1][j][0];
+//                            dp[i][j][1] += dp[i][k][1] * (dp[k + 1][j][0] + dp[k + 1][j][1]) + dp[i][k][0] * dp[k + 1][j][1];
+//                        }
+//                        case '|' -> {
+//                            dp[i][j][1] += dp[i][k][1] * dp[k + 1][j][1];
+//                            dp[i][j][0] += dp[i][k][0] * (dp[k + 1][j][0] + dp[k + 1][j][1]) + dp[i][k][1] * dp[k + 1][j][0];
+//                        }
+//                        default -> {
+//                            dp[i][j][0] += dp[i][k][0] * dp[k + 1][j][1] + dp[i][k][1] * dp[k + 1][j][0];
+//                            dp[i][j][1] += dp[i][k][0] * dp[k + 1][j][0] + dp[i][k][1] * dp[k + 1][j][1];
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//        return dp[0][length-1][0];
+//        // write your code here
+//    }
 
-    public static void main(String[] args){
-        String s1="TFFF";
-        String s2=        "^|&";
-        System.out.println(new LINTCODE725().countParenth(s1.toCharArray(),s2.toCharArray()));
-
-    }
 }
